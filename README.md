@@ -9,5 +9,6 @@ puntos:
 - Usar flexbox y CSS Grid.
 - Usar media queries.
 - Resolver algunas interacciones usando transiciones.
-  > La fecha límite de entrega es: _Lunes, 15 de junio a las 14:00h._ Si después
-  > del ejercicio quisiéramos seguir trabajando sobre él, se debe hacer en otra rama y no mergearla hasta que los profesores os lo indiquen.
+
+> La fecha límite de entrega es: _Lunes, 15 de junio a las 14:00h._ Si después
+> del ejercicio quisiéramos seguir trabajando sobre él, se debe hacer en otra rama y no mergearla hasta que los profesores os lo indiquen.
