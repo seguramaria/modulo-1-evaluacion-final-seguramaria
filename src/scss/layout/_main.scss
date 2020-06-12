@@ -59,7 +59,7 @@
 
 // ARTÍCULO 2
 
-.reasons {
+.reasons-list {
   background-color: $light-blue;
   display: grid;
   grid-template-columns: 70px 180px 70px;
@@ -79,9 +79,7 @@
   margin: 0;
 }
 
-.reason-1 {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+.reason {
   h3 {
     font-size: 1.125rem;
     font-family: $font-titles;
@@ -93,41 +91,22 @@
     line-height: 30px;
     margin: 0;
   }
-}
 
-.reason-2 {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-
-  h3 {
-    font-size: 1.125rem;
-    font-family: $font-titles;
-    line-height: 30px;
-    margin: 0;
+  &-1 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
   }
-  p {
-    font-size: 1.125rem;
-    line-height: 30px;
-    margin: 0;
+
+  &-2 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  &-3 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
   }
 }
-
-.reason-3 {
-  grid-column: 2 / 3;
-  grid-row: 4 / 5;
-  h3 {
-    font-size: 1.125rem;
-    font-family: $font-titles;
-    line-height: 30px;
-    margin: 0;
-  }
-  p {
-    font-size: 1.125rem;
-    line-height: 30px;
-    margin: 0;
-  }
-}
-
 .reason-button {
   grid-column: 2 / 3;
   grid-row: 5 / 6;
