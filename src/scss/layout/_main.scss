@@ -1,3 +1,5 @@
+// ARTÍCULO 1
+
 .tip {
   background-color: $light-color;
   padding: 30px 15px 45px;
@@ -22,61 +24,121 @@
     color: $secondary-color;
     text-transform: capitalize;
   }
+
   .title-tip {
     font-size: 1.5rem;
     font-family: $font-titles;
     text-transform: capitalize;
   }
+
   p {
     color: $dark-grey;
     font-size: 1.125rem;
     line-height: 1.67;
     // Este font-size y line heigt se repite en cuatro párrafos, puede ir como un mixin
   }
-  .go-button {
-    background-color: $light-color;
-    border: 2px solid $primary-color;
-    width: 76px;
-    height: 45px;
-    border-radius: 22.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
 
-    a {
-      color: $primary-color;
-      font-size: 1.25rem;
-      line-height: 45px;
-      font-weight: 500;
-    }
+.go-button {
+  background-color: $light-color;
+  border: 2px solid $primary-color;
+  width: 76px;
+  height: 45px;
+  border-radius: 22.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: $primary-color;
+    font-size: 1.25rem;
+    line-height: 45px;
+    font-weight: 500;
   }
 }
+
+// ARTÍCULO 2
 
 .reasons {
   background-color: $light-blue;
   display: grid;
   grid-template-columns: 70px 180px 70px;
-  grid-template-rows: 30px 93px 93 px 93 px 45px;
-  //   grid-gap-rows: 45px;
+  grid-template-rows: 30px 93px 93px 93px 45px;
+  grid-row-gap: 45px;
   text-align: center;
-  .title-reasons {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
+  padding: 30px 0 60px;
+}
+
+.title-reasons {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  font-size: 1.5rem;
+  font-family: $font-titles;
+  text-transform: capitalize;
+  line-height: 30px;
+  margin: 0;
+}
+
+.reason-1 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  h3 {
+    font-size: 1.125rem;
+    font-family: $font-titles;
+    line-height: 30px;
+    margin: 0;
   }
-  .reason-1 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+  p {
+    font-size: 1.125rem;
+    line-height: 30px;
+    margin: 0;
   }
-  .reason-2 {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
+}
+
+.reason-2 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+
+  h3 {
+    font-size: 1.125rem;
+    font-family: $font-titles;
+    line-height: 30px;
+    margin: 0;
   }
-  .reason-3 {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
+  p {
+    font-size: 1.125rem;
+    line-height: 30px;
+    margin: 0;
   }
-  .reason-button {
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
+}
+
+.reason-3 {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  h3 {
+    font-size: 1.125rem;
+    font-family: $font-titles;
+    line-height: 30px;
+    margin: 0;
+  }
+  p {
+    font-size: 1.125rem;
+    line-height: 30px;
+    margin: 0;
+  }
+}
+
+.reason-button {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  background-color: #f26002;
+  background-position: center;
+  width: 184px;
+  height: 45px;
+  border-radius: 22.5px;
+  a {
+    font-size: 1.25rem;
+    line-height: 45px;
+    color: $light-color;
   }
 }
