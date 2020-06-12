@@ -1,12 +1,28 @@
 .tip {
   background-color: $light-color;
-  padding: 30px 15px 45px 15px;
+  padding: 30px 15px 45px;
+  //   POngo los margins así,
+  //   porque 15 es horizontal,
+  //   igual
+  //     para
+  //     ambos
+  //     lados(izq y derecha).
+  //     POngo
+  //     padding
+  //     porque
+  //     lo
+  //     que
+  //     quiero
+  //     es
+  //     separar
+  //     el contenido del contendedor.
+
   .tip-text {
     font-size: 0.875rem;
     color: $secondary-color;
     text-transform: capitalize;
   }
-  .title-article {
+  .title-tip {
     font-size: 1.5rem;
     font-family: $font-titles;
     text-transform: capitalize;
@@ -34,4 +50,12 @@
       font-weight: 500;
     }
   }
+}
+
+.reasons {
+  background-color: $light-blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30px 93px 93 px 93 px 45px;
+  grid-gap: 45px;
 }
