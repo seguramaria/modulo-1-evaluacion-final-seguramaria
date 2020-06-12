@@ -55,7 +55,28 @@
 .reasons {
   background-color: $light-blue;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 70px 180px 70px;
   grid-template-rows: 30px 93px 93 px 93 px 45px;
-  grid-gap: 45px;
+  //   grid-gap-rows: 45px;
+  text-align: center;
+  .title-reasons {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+  .reason-1 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .reason-2 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  .reason-3 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  .reason-button {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
 }
