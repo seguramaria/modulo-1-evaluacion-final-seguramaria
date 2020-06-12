@@ -1,8 +1,28 @@
-// .page__footer {
-//   position: fixed;
-//   left: 0;
-//   bottom: 0;
-//   width: 100vw;
-//   padding: 1rem;
-//   color: $color-secondary;
-// }
+.footer {
+  background-color: $dark-blue;
+  color: $light-color;
+  min-height: 465px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menu {
+  line-height: 1.875rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  a {
+    // display: block;
+  }
+}
+.copy {
+  font-size: 0.875rem;
+  text-transform: lowercase;
+  line-height: 1.875rem;
+
+  .heart {
+    color: $primary-color;
+  }
+}
