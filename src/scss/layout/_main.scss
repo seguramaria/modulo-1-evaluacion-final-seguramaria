@@ -1,4 +1,4 @@
-.main-wrapper {
+.main__wrapper {
   width: 100%;
   margin: auto;
   min-width: 320px;
@@ -11,13 +11,13 @@
   background-color: $light-color;
   padding: 30px 15px 45px;
 
-  .tip-text {
+  &__text {
     font-size: 0.875rem;
     color: $secondary-color;
     text-transform: capitalize;
   }
 
-  .title-tip {
+  &__title {
     font-size: 1.5rem;
     font-family: $font-titles;
     text-transform: capitalize;
@@ -50,7 +50,7 @@
 
 // ARTÍCULO 2
 
-.reasons-list {
+.reasons {
   background-color: $light-blue;
   display: grid;
   grid-template-columns: 21.88% 56.25% 21.88%;
@@ -60,16 +60,16 @@
   place-items: center;
   margin: 0;
   padding: 30px 0 60px;
-}
 
-.title-reasons {
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
-  font-size: 1.5rem;
-  font-family: $font-titles;
-  text-transform: capitalize;
-  line-height: 1.875rem;
-  margin: 0;
+  &__title {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    font-size: 1.5rem;
+    font-family: $font-titles;
+    text-transform: capitalize;
+    line-height: 1.875rem;
+    margin: 0;
+  }
 }
 
 .reason {
