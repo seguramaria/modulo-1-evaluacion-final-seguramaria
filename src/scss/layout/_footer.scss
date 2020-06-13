@@ -78,3 +78,25 @@
     width: 210px;
   }
 }
+
+@include desktop {
+  .footer {
+    padding: 45px 39px;
+
+    &__menu {
+      justify-content: center;
+    }
+  }
+
+  .list {
+    &__1 {
+      width: 161px;
+    }
+    &__2 {
+      width: 159px;
+    }
+  }
+  .copy {
+    width: 159px;
+  }
+}
