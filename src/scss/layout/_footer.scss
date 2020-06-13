@@ -29,7 +29,7 @@
   box-shadow: 0 2px 4px 0 $shadows;
 }
 
-.menu {
+.list {
   line-height: 1.875rem;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -47,33 +47,33 @@
 @include tablet {
   .footer {
     min-height: 240px;
+    padding: 45px 39px;
+
     &__menu {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      border: 2px solid yellow;
+      justify-content: space-evenly;
       width: 100%;
+      text-align: left;
     }
-    text-align: center;
   }
 
-  .menu {
-    line-height: 1.875rem;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    border: 2px solid red;
-    $__list-1 {
-      border: 2px solid pink;
+  .list {
+    margin: 0;
+    &__1 {
+      border: 2px solid red;
+      width: 210px;
+      order: 2;
+    }
+    &__2 {
+      border: 2px solid green;
+      width: 210px;
+      order: 3;
     }
   }
   .copy {
-    font-size: 0.875rem;
-    text-transform: lowercase;
-    line-height: 1.875rem;
-    border: 2px solid red;
-
-    .heart {
-      color: $primary-color;
-    }
+    order: 1;
+    border: 2px solid green;
+    width: 150px;
   }
 }
