@@ -15,6 +15,7 @@
     font-size: 0.875rem;
     color: $secondary-color;
     text-transform: capitalize;
+    line-height: 1.875rem;
   }
 
   &__title {
@@ -22,12 +23,14 @@
     font-family: $font-titles;
     text-transform: capitalize;
     line-height: 1.875rem;
+    margin: 0;
   }
 
   &__text {
     color: $dark-grey;
     font-size: 1.125rem;
     line-height: 1.875rem;
+    margin: 15px 0 30px;
   }
 }
 
@@ -53,17 +56,30 @@
   .tip {
     padding: 30px 39px 60px;
     min-height: 330px;
-
     &__title {
       font-size: 1.625rem;
       line-height: 2.8125rem;
-      margin: 0;
-      margin-bottom: 30px;
     }
     &__text {
       font-size: 1.25rem;
-      margin: 0;
-      margin-bottom: 30px;
+      margin: 30px 0 30px;
+    }
+  }
+
+  .go-button {
+    width: 160px;
+  }
+}
+
+@include desktop {
+  .tip {
+    padding: 60px 275px;
+    min-height: 360px;
+    &__headline {
+      font-size: 1rem;
+    }
+    &__title {
+      font-size: 2rem;
     }
   }
 
@@ -142,10 +158,10 @@
 
 @include tablet {
   .reasons {
-    max-height: 397px;
+    height: 397px;
     grid-template-columns: 33.3% 1fr 33.3%;
     grid-template-rows: 45px 98px 45px;
-    grid-row-gap: 45px;
+
     padding: 30px 40px 60px 35.7px;
 
     &__title {
@@ -188,10 +204,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
-    // Puesto que serían 15px más 45px del row gap, que daría los 60 que pide la deiseñadora
+    margin-top: 60px;
     a {
       font-size: 1.25rem;
     }
+  }
+}
+
+@include desktop {
+  .reasons {
+    height: 427px;
+    padding: 60px 85px 81.2px;
+
+    &__title {
+      font-size: 2rem;
+    }
+  }
+
+  .reason {
+    &-1 {
+      margin-right: 13.1px;
+    }
+
+    &-2 {
+      margin-left: 13.1px;
+      margin-right: 13.1px;
+    }
+
+    &-3 {
+      margin-left: 13.1px;
+      transform: translate(0, -19px);
+    }
+  }
+
+  .reason-button {
+    width: 255px;
   }
 }
