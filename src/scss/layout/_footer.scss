@@ -43,3 +43,37 @@
     color: $primary-color;
   }
 }
+
+@include tablet {
+  .footer {
+    min-height: 240px;
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border: 2px solid yellow;
+      width: 100%;
+    }
+    text-align: center;
+  }
+
+  .menu {
+    line-height: 1.875rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border: 2px solid red;
+    $__list-1 {
+      border: 2px solid pink;
+    }
+  }
+  .copy {
+    font-size: 0.875rem;
+    text-transform: lowercase;
+    line-height: 1.875rem;
+    border: 2px solid red;
+
+    .heart {
+      color: $primary-color;
+    }
+  }
+}
