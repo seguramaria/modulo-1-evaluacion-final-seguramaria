@@ -74,3 +74,20 @@
     }
   }
 }
+
+@include desktop {
+  .hero {
+    padding-bottom: 13px;
+
+    &__title {
+      &__h1 {
+        font-size: 6.25rem;
+        line-height: 8.25rem;
+        margin: 0;
+      }
+      &__p {
+        margin: 0;
+      }
+    }
+  }
+}
