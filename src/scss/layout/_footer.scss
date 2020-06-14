@@ -34,6 +34,16 @@
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+
+@keyframes heartbeat {
+  from {
+    font-size: 0.875rem;
+  }
+
+  to {
+    font-size: 1.5rem;
+  }
+}
 .copy {
   font-size: 0.875rem;
   text-transform: lowercase;
@@ -41,6 +51,7 @@
 
   .heart {
     color: $primary-color;
+    animation: heartbeat 0.9s infinite;
   }
 }
 
