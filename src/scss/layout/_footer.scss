@@ -10,7 +10,6 @@
   align-items: center;
   text-align: center;
   position: relative;
-  z-index: 1;
   &__wrapper {
     width: 100%;
     margin: auto;
@@ -20,7 +19,7 @@
 
 .arrow {
   position: absolute;
-  z-index: 2;
+
   top: -25px;
   background-color: $light-color;
   width: 45px;
