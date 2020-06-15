@@ -1,16 +1,15 @@
-.main__wrapper {
-  width: 100%;
-  margin: auto;
-  min-width: 320px;
-  max-width: 1200px;
+// ARTÍCULO 1
+.article-1 {
+  background-color: $light-color;
 }
 
-// ARTÍCULO 1
-
 .tip {
-  background-color: $light-color;
-  padding: 30px 15px 45px;
-
+  &__wrapper {
+    width: 100%;
+    margin: auto;
+    max-width: 320px;
+    padding: 30px 15px 45px;
+  }
   &__headline {
     font-size: 0.875rem;
     color: $secondary-color;
@@ -65,7 +64,10 @@
 @include tablet {
   .tip {
     padding: 30px 39px 60px;
-    min-height: 330px;
+    height: 330px;
+    &__wrapper {
+      max-width: 768px;
+    }
     &__title {
       font-size: 1.625rem;
       line-height: 2.8125rem;
@@ -85,6 +87,9 @@
   .tip {
     padding: 60px 275px;
     min-height: 360px;
+    &__wrapper {
+      max-width: 1280px;
+    }
     &__headline {
       font-size: 1rem;
     }
@@ -99,9 +104,17 @@
 }
 
 // ARTÍCULO 2
-
-.reasons {
+.article-2 {
   background-color: $light-blue;
+}
+
+.reasons__wrapper {
+  width: 100%;
+  margin: auto;
+  max-width: 320px;
+}
+.reasons {
+  max-width: 1280px;
   display: grid;
   grid-template-columns: 21.88% 56.25% 21.88%;
   grid-template-rows: 30px 93px 93px 93px 45px;
@@ -179,9 +192,10 @@
     height: 397px;
     grid-template-columns: 33.3% 1fr 33.3%;
     grid-template-rows: 45px 98px 45px;
-
     padding: 30px 40px 60px 35.7px;
-
+    &__wrapper {
+      max-width: 768px;
+    }
     &__title {
       font-size: 1.625rem;
       line-height: 2.8125rem;
@@ -234,7 +248,9 @@
   .reasons {
     height: 427px;
     padding: 60px 85px 81.2px;
-
+    &__wrapper {
+      max-width: 1280px;
+    }
     &__title {
       font-size: 2rem;
     }

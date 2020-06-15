@@ -1,5 +1,7 @@
-.footer {
+.page__footer {
   background-color: $dark-blue;
+}
+.footer {
   color: $light-color;
   min-height: 465px;
   display: flex;
@@ -11,7 +13,7 @@
   &__wrapper {
     width: 100%;
     margin: auto;
-    max-width: 1200px;
+    max-width: 320px;
   }
 }
 
@@ -57,7 +59,9 @@
   .footer {
     min-height: 240px;
     padding: 45px 39px;
-
+    &__wrapper {
+      max-width: 768px;
+    }
     &__menu {
       display: flex;
       flex-direction: row;
@@ -103,7 +107,9 @@
 @include desktop {
   .footer {
     padding: 45px 39px;
-
+    &__wrapper {
+      max-width: 1280px;
+    }
     &__menu {
       justify-content: center;
     }
