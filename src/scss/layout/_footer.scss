@@ -55,6 +55,13 @@
   line-height: 1.875rem;
   text-transform: uppercase;
   margin-bottom: 30px;
+  li {
+    transition: color font-size ease 0.8s;
+    &:hover {
+      color: $primary-color;
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .copy {
