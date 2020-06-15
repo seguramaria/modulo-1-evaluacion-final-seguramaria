@@ -48,7 +48,11 @@
   text-transform: lowercase;
   line-height: 1.875rem;
   width: 100%;
-
+  h5 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
   .heart {
     color: $primary-color;
     animation: heartbeat 0.9s infinite;
