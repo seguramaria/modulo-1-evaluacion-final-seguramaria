@@ -13,44 +13,46 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/0c04f9b7b8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="page">
       <header class="page__header" id="home">
-        <div class="header__wrapper">
-          <div class="header__menu">
-            <a href="https://adalab.es/" title="Ir a Adalab" target="_blank">
-              <img
-                class="menu-icon"
-                src="./assets/images/ico-menu.svg"
-                alt="Menu icon"
-              />
-            </a>
+        <div class="header__menu">
+          <a href="https://adalab.es/" title="Ir a Adalab" target="_blank">
+            <img
+              class="menu-icon"
+              src="./assets/images/ico-menu.svg"
+              alt="Menu icon"
+            />
+          </a>
+        </div>
+        <div class="hero">
+          <div class="hero__title">
+            <h1 class="hero__title__h1">
+              <span>Anonymous</span>
+              <span>Proxy</span>
+            </h1>
+            <p class="hero__title__p">In hac habitasse platea dictumst.</p>
           </div>
-          <div class="hero">
-            <div class="hero__title">
-              <h1 class="hero__title__h1">
-                <span>Anonymous</span>
-                <span>Proxy</span>
-              </h1>
-              <p class="hero__title__p">In hac habitasse platea dictumst.</p>
-            </div>
-            <div class="scroll-down">
-              <a
-                href="#reasons-to-purchase"
-                title="Ir al artículo Reasons to purchase"
-                ><img
-                  src="./assets/images/ico-scroll-down.svg"
-                  alt="Icono para deslizar al artículo Reasons to purchase"
-              /></a>
-            </div>
+          <div class="scroll-down">
+            <a href="#reasons-to-purchase" title="Ir al artículo Reasons to purchase"
+              ><img
+                src="./assets/images/ico-scroll-down.svg"
+                alt="Icono para deslizar al artículo Reasons to purchase"
+            /></a>
           </div>
         </div>
       </header>
 
       <main class="page__main">
-        <div class="main__wrapper">
-          <article class="tip">
+        
+          <article class="article-1">
+            <div class="tip__wrapper">
+              <div class="tip"> 
             <span class="tip__headline">Insomnia tips</span>
             <h2 class="tip__title">
               <span>Looking through a </span><span>window</span>
@@ -62,26 +64,39 @@
             <div class="go-button">
               <a href="https://adalab.es/" title="Ir a Adalab" target="_blank">Go</a>
             </div>
+           </div>
+          </div>
           </article>
-          <article id="reasons-to-purchase" class="reasons">
-            <h2 class="reasons__title">3 Reasons to purchase</h2>
-            <div class="reason reason-1">
-              <h3>Ut sed metus</h3>
-              <p>Lorem ipsum dolor sit amet, consecteur.</p>
+
+
+
+
+
+
+
+          <article id="reasons-to-purchase" class="article-2">
+            <div class="reasons__wrapper">
+            <div class="reasons">
+              <h2 class="reasons__title">3 Reasons to purchase</h2>
+              <div class="reason reason-1">
+                <h3>Ut sed metus</h3>
+                <p>Lorem ipsum dolor sit amet, consecteur.</p>
+              </div>
+              <div class="reason reason-2">
+                <h3>Curabitur ac erat</h3>
+                <p>Mauris mattis urna quis lorem molestie.</p>
+              </div>
+              <div class="reason reason-3">
+                <h3>Morbi dictum</h3>
+                <p>Aliquam in dolor et dolor tincidunt.</p>
+              </div>
+              <div class="reason-button">
+                <a href="https://adalab.es/" title="Ir a Adalab" target="_blank"
+                  >More reasons</a
+                >
+              </div>
             </div>
-            <div class="reason reason-2">
-              <h3>Curabitur ac erat</h3>
-              <p>Mauris mattis urna quis lorem molestie.</p>
-            </div>
-            <div class="reason reason-3">
-              <h3>Morbi dictum</h3>
-              <p>Aliquam in dolor et dolor tincidunt.</p>
-            </div>
-            <div class="reason-button">
-              <a href="https://adalab.es/" title="Ir a Adalab" target="_blank"
-                >More reasons</a
-              >
-            </div>
+          </div>
           </article>
         </div>
       </main>
@@ -147,7 +162,11 @@
               <div class="copy">
                 <span> &copy;2017</span>
                 <div>
-                  <span>We <span class="heart">❤︎</span> components</span>
+                  <span
+                    >We
+                    <span class="heart"><i class="fas fa-heart"></i></span>
+                    components</span
+                  >
                 </div>
               </div>
             </div>
