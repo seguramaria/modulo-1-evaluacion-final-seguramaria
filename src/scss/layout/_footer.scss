@@ -1,9 +1,9 @@
 .page__footer {
-  background-color: $dark-blue;
+  background-color: $blue;
 }
 
 .footer {
-  color: $light-color;
+  color: black;
   min-height: 465px;
   display: flex;
   justify-content: center;
@@ -19,7 +19,6 @@
 
 .arrow {
   position: absolute;
-
   top: -25px;
   background-color: $light-color;
   width: 45px;
@@ -54,7 +53,7 @@
 .list {
   line-height: 1.875rem;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   li {
     transition: color font-size ease 0.8s;
     &:hover {
@@ -100,23 +99,23 @@
     margin: 0;
     &__1 {
       width: 210px;
-      order: 2;
       margin-right: 15px;
       margin-left: 15px;
     }
     &__2 {
       width: 210px;
-      order: 3;
       margin-left: 15px;
     }
   }
 
   .copy {
-    order: 1;
     margin-right: 15px;
     width: 210px;
     .heart {
       animation: heartbeat 0.9s infinite;
+    }
+    .components {
+      color: orange;
     }
   }
 
